@@ -13,3 +13,6 @@ C:\Users\Admin\Documents\MPM\Factory Display\NikiasPDFParser\NikiasPDFParser\bin
 C:\Users\Admin\Documents\MPM\Factory Display\NikiasPDFParser\NikiasPDFParser\bin\Debug\NikiasPDFParser.application
 C:\Users\Admin\Documents\MPM\Factory Display\NikiasPDFParser\NikiasPDFParser\obj\Debug\NikiasPDFParser.exe.manifest
 C:\Users\Admin\Documents\MPM\Factory Display\NikiasPDFParser\NikiasPDFParser\obj\Debug\NikiasPDFParser.application
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\bin\Debug\NikiasPDFParser.exe.config
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\obj\Debug\NikiasPDFParser.exe
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\obj\Debug\NikiasPDFParser.pdb

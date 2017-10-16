@@ -1,4 +1,4 @@
-﻿namespace NikiasPDFParser
+﻿namespace LCSStatementParser
 {
     partial class Form1
     {

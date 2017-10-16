@@ -1,0 +1,15 @@
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\obj\Debug\LCL_Statement_Parser.csprojResolveAssemblyReference.cache
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\obj\Debug\NikiasPDFParser.Form1.resources
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\obj\Debug\NikiasPDFParser.Properties.Resources.resources
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\obj\Debug\LCL_Statement_Parser.csproj.GenerateResource.Cache
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\obj\Debug\NikiasPDFParser.exe
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\obj\Debug\NikiasPDFParser.pdb
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\bin\Debug\NikiasPDFParser.exe.config
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\bin\Debug\NikiasPDFParser.exe.manifest
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\bin\Debug\NikiasPDFParser.application
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\bin\Debug\NikiasPDFParser.exe
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\bin\Debug\NikiasPDFParser.pdb
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\bin\Debug\itextsharp.dll
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\bin\Debug\itextsharp.xml
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\obj\Debug\NikiasPDFParser.exe.manifest
+C:\Users\Admin\LCL-Bank-Statement-Parser\NikiasPDFParser\obj\Debug\NikiasPDFParser.application

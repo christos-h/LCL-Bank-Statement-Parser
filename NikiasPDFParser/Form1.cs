@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NikiasPDFParser
+namespace LCSStatementParser
 {
     public partial class Form1 : Form
     {
@@ -20,7 +20,9 @@ namespace NikiasPDFParser
         {
             InitializeComponent();
         }
-
+        
+        //Button click listener to beign conversion
+        //Most operational logic stems from here
         private void button1_Click(object sender, EventArgs e)
         {
             if (File.Exists(textBox1.Text))
@@ -63,44 +65,18 @@ namespace NikiasPDFParser
 
             using (PdfReader reader = new PdfReader(path))
             {
-
-
-
                 for (int i = 1; i <= reader.NumberOfPages; i++)
                 {
                     stringList.Add(PdfTextExtractor.GetTextFromPage(reader, i));
-
-
                 }
-
                 return stringList;
             }
         }
 
-        public static List<string> ExtractTextFromPdfBoundaries(String path)
+        //Extracts Dates from files and adds 2017 to the end 
+        //TODO not static. 
+        private static String extractDatesFromFile1(String input)
         {
-            List<String> stringList = new List<String>();
-
-            using (PdfReader reader = new PdfReader(path))
-            {
-
-
-                iTextSharp.text.Rectangle rect = new iTextSharp.text.Rectangle(0, 0, 100, 500);
-                RenderFilter[] filter = { new RegionTextRenderFilter(rect) };
-                ITextExtractionStrategy strategy;
-                StringBuilder sb = new StringBuilder();
-                for (int i = 1; i <= reader.NumberOfPages; i++)
-                {
-                    strategy = new FilteredTextRenderListener(new LocationTextExtractionStrategy(), filter);
-                    stringList.Add(PdfTextExtractor.GetTextFromPage(reader, i, strategy));
-                }
-
-            }
-            return stringList;
-
-        }
-
-        private static String extractDatesFromFile1(String input) {
 
             String s = "";
 
@@ -114,7 +90,7 @@ namespace NikiasPDFParser
         }
 
 
-        private static String extractDateFromFile2(String input) 
+        private static String extractDateFromFile2(String input)
         {
             String s = "";
 
@@ -129,10 +105,9 @@ namespace NikiasPDFParser
 
 
 
-
+        //Separates the string list w.r.t breaks
         public static List<String> separateLineBreaks(List<String> stringList)
         {
-
             List<String> newList = new List<String>();
             foreach (String s in stringList)
             {
@@ -146,6 +121,7 @@ namespace NikiasPDFParser
             return newList;
         }
 
+        //Perform a cleanup on the list
         public static List<String> cleanList(List<String> stringList)
         {
             List<String> cleanList = new List<String>();
@@ -157,51 +133,42 @@ namespace NikiasPDFParser
                     cleanList.Add(stringList[i]);
                 }
             }
-
             return cleanList;
-
-
         }
-
+        //Replace all commas in the string list to fullstops
         public static List<String> removeComma(List<String> stringList)
         {
             List<String> cleanList = new List<String>();
 
             for (int i = 1; i < stringList.Count - 1; i++)
             {
-
                 cleanList.Add(stringList[i].Replace(",", "."));
             }
 
-
-
-
             return cleanList;
-
         }
 
+        //Convert to CSV using comma as delimeter. Also performs some formatting on the dates
+        //TODO: Consider extracting to two separate methods 
         public static List<String> convertToCsv(List<String> stringList)
         {
             List<String> csvList = new List<String>();
 
             foreach (String s in stringList)
             {
-               
                 int i = s.IndexOf(extractDatesFromFile1(s));
-                
+
                 String s2 = s.Insert(i + 5, ", ,");
 
                 s2 += ", , ,";
 
                 s2 += (extractDateFromFile2(s) + ".17").Replace(".", "/");
                 csvList.Add(s2);
-
             }
-
             return csvList;
-
         }
-
+        //Listener for the button
+        //Opens a file dialog to open the file
         private void button2_Click(object sender, EventArgs e)
         {
 

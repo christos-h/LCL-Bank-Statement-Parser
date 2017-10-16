@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NikiasPDFParser.exe" size="12720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NikiasPDFParser.exe" size="11264">
       <assemblyIdentity name="NikiasPDFParser" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>koR0Euv8d51YW1d+oNOYhfoT7x3f/cFIBcunWsSoAMk=</dsig:DigestValue>
+        <dsig:DigestValue>xdnB4Rsyc/PrMWDPyx/YhRUIqSD5GX343Lsr9zJl5cM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
